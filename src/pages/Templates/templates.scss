@@ -1,0 +1,47 @@
+@import '../../assets/Stylesheet/abstract/Variable.scss';
+.main {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding-block: 1rem;
+    animation: show 0.3s ease-in forwards;
+
+    .spin-container{
+        display: flex;
+        height: 85%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .templates {
+        margin-top: 1rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        .sub-heading{
+            padding-inline: 2rem;
+            color: $color-black-lable;
+            font-size:$text-sub-heading;
+            font-weight: 500;
+        }
+
+        .cont {
+            padding-inline: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            column-gap: 2rem;
+            row-gap: 2rem;
+            // justify-items: center;
+        }
+    }
+
+    @keyframes show {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}

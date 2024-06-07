@@ -1,0 +1,35 @@
+@import '../../assets//Stylesheet/abstract/Variable.scss';
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: $color-black;
+
+    .heading {
+        font-size: 96px;
+        margin: 0;
+    }
+    
+    .sub-heading {
+        font-size: 2rem;
+        margin: 10px 0;
+    }
+    
+    .back-home-button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-image: linear-gradient(to right,  #7CB845 ,#0A5144 );
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: background-color 0.3s ease;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    
+}
+

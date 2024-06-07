@@ -1,0 +1,63 @@
+
+@import '../../assets/Stylesheet/abstract/Variable.scss';
+.card {
+    position: relative;  
+
+    &-title {
+        text-align: center;
+        margin-block: 0.3rem;
+        font-size: $text-sidebar-lable;
+        font-family: 'Poppins-Regular';
+    }
+
+    &-info {
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            p:nth-child(2) {
+                color: #0000008a;
+                font-size: $text-para;
+            }
+        }
+
+        &-time {
+            margin: 0;
+            color: #0000008a;
+            font-size: $text-para;
+        }
+    }
+
+    .check-icon {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        border: 1px solid rgb(180, 179, 179);
+    }
+    .check-icon-none {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        border: 1px solid rgb(180, 179, 179);
+        display: none;
+    }
+}
+
+.selectableCard {
+    border-radius: 10px;
+}

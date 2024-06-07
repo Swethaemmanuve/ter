@@ -1,0 +1,28 @@
+
+@import '../../assets/Stylesheet/abstract/Variable.scss';
+
+.button-with-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 20px;
+    border: 1px solid $btn-Icon-border-color;
+    background-color: $color-white;
+    border-radius: $border-radius;
+
+    .button-icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+    .button-lable{
+        font-size: $input-lable-size;
+        font-weight: 400;
+    }
+    &:hover {
+        opacity: 0.5; 
+        background-color: #EBECEC;
+        cursor: not-allowed
+    }
+}

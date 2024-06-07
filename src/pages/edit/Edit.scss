@@ -1,0 +1,245 @@
+.editor-main {
+    width: 100vw;
+    height: 100vh;
+    padding: 3rem;
+    background-color: #ffffff;
+    overflow-x: hidden;
+
+    .nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .btn {
+            all: unset;
+        }
+
+        .nav-goback {
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 50%;
+            background-color: #535353;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 8px 16px 0px #0000004d;
+        }
+
+        .textBtn {
+            margin-left: 4rem;
+            color: #9a9a9a;
+
+            cursor: pointer;
+            font-family: 'Poppins-Regular';
+
+            span {
+                font-size: 1.4rem;
+            }
+        }
+
+        :nth-child(2) {
+            margin-left: auto;
+        }
+
+        :nth-child(5) {
+            padding: 1rem 2.7rem;
+
+            border-radius: 2rem;
+            background-color: #222;
+            color: #fff;
+        }
+    }
+
+    .content {
+        padding: 2rem;
+        width: 100%;
+
+        .websiteview {
+            position: relative;
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+    }
+}
+
+.loading-modal {
+    .ant-modal {
+        .ant-modal-content {
+            background-color: transparent;
+            text-align: center;
+            box-shadow: none;
+            .ant-modal-close {
+                display: none;
+            }
+        }
+    }
+}
+.ant-dropdown-menu {
+    .ant-dropdown-menu-item {
+        span {
+            font-size: 14px;
+        }
+    }
+}
+
+.deploy-dropdown {
+    .ant-dropdown-menu {
+        .ant-dropdown-menu-submenu {
+            .ant-dropdown-menu-submenu-title {
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .ant-dropdown-menu-item {
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.fetchloading {
+    .ant-spin-dot-item {
+        background-color: #7cb845 !important;
+    }
+}
+
+.deploy-modal {
+    .ant-modal-title {
+        font-size: 20px;
+    }
+    .input-lable {
+        font-size: 12px;
+    }
+
+    .ant-modal-body {
+        .confirmText {
+            font-size: 14px;
+        }
+    }
+}
+
+.editbox-modal {
+    .ant-modal {
+        .ant-modal-content {
+            border-radius: 20px;
+            background-color: #fbf9f9;
+            box-shadow: -4px -4px 16px 0px #00000038;
+
+            .heading {
+                color: #5f5f5f;
+                font-family: 'Poppins-Regular';
+                font-size: 19px;
+            }
+
+            .nav {
+                margin-block: 1rem;
+                .active {
+                    color: #cacaca;
+                }
+                span {
+                    color: #00000063;
+                    margin-right: 15px;
+                    font-size: 17px;
+                    font-family: 'Poppins-Regular';
+                }
+            }
+
+            .labelContainer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .regenerateContent {
+                    display: flex;
+                    align-items: center;
+                    color: #7cb845;
+                    cursor: pointer;
+                    margin-right: 15px;
+
+                    &:active {
+                        opacity: 0.6;
+                    }
+
+                    .rotateIcon {
+                        animation: spin 1s linear infinite forwards;
+                    }
+
+                    @keyframes spin {
+                        0% {
+                            transform: rotate(0deg);
+                        }
+                        100% {
+                            transform: rotate(-360deg);
+                        }
+                    }
+                }
+            }
+
+            label {
+                font-size: 13px;
+                font-family: 'Poppins-Regular';
+                color: #373737a1;
+            }
+
+            .selected-text-cont {
+                margin-block: 1rem;
+                border-radius: 10px;
+                padding: 1rem;
+                border: 1px solid #00000038;
+                background-color: #ffffff;
+                font-family: 'Poppins-Regular';
+
+                span {
+                    font-size: 13px;
+                    color: #373737a1;
+                }
+
+                div {
+                    height: 50px;
+                    overflow-y: auto;
+                    font-size: 13px;
+                    text-overflow: ellipsis;
+                    margin-top: 0.8rem;
+                }
+            }
+            .text-area {
+                height: 150px;
+                width: 100%;
+                font-size: 13px;
+                border-radius: 10px;
+                padding: 1rem;
+                resize: none;
+                outline: none;
+                font-family: 'Poppins-Regular';
+                border: 1px solid #00000038;
+                background-color: #ffffff;
+            }
+        }
+    }
+}
+
+.updateBtn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #7cb845;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Poppins-Regular';
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+
+    &:active {
+        opacity: 0.6;
+    }
+}
+.secondary {
+    background-color: #fff;
+    border: 1px solid #7070701f;
+    font-size: 13px;
+    color: #6060609f;
+}

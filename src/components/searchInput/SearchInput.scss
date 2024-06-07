@@ -1,0 +1,25 @@
+
+@import '../../assets/Stylesheet/abstract/Variable.scss';
+.search-container {
+    position: relative;
+    width: 100%
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+    cursor: not-allowed;
+  }
+  
+  .search-input {
+    padding-left: 50px; 
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background-color: $input-bg-color;
+    outline: none;
+    width: 25rem;
+    font-size: 1.3rem;
+  }

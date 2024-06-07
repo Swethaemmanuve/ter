@@ -1,0 +1,49 @@
+@import '../../assets/Stylesheet/abstract/Variable.scss';
+.templateHeader {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: $text-heading;
+    line-height: 53px;
+    margin-top: 1rem;
+}
+
+.templateConatiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30vh;
+    .urlInput {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .optionContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .optionContainer::before,
+    .optionContainer::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid #000;
+        margin: 0 25px;
+    }
+
+    .optionContainer::before {
+        margin-right: 8px;
+    }
+
+    .optionContainer::after {
+        margin-left: 8px;
+    }
+    .uploadBtn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
